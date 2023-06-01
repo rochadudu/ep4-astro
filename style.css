@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(milky-way-galaxy.gif);/* uamos para por o gif no fundo da pagina */ 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.5fr 1.3fr 1.2fr 1.1fr;
+    grid-template-rows: 0.2fr 0.2fr 3.4fr 0.4fr;
+    grid-template-areas: 
+    "cabe cabe cabe cabe"
+    "secun prin prin prin"
+    "secun prin prin prin"
+    "roda roda roda roda";/*usamos para definir aonde cada grid ficara  */
+    grid-gap: 0.5em;
+    
+
+}
+
+#cabe{
+    grid-area: cabe;
+    display: flex;
+    width: 100%; 
+    justify-content: center;
+    background: linear-gradient(to right, #a95e13, #110038);/*fazer degrade no header */
+    border-radius: 20px;/* bordas redondas */
+
+}
+ 
+
+#cabe img{
+    width: 8rem;
+    padding-right: 60rem ;
+} 
+
+#prin{ 
+    grid-area: prin;
+    display: grid;
+    text-align: justify;
+    background-color: rgba(255, 228, 196, 0);/* definir a cor do fundo*/
+    border-radius: 0.8em;/*definir bordas arredondadas */ 
+    margin-top: 1%;/* definir a porcentagem  do topo */
+    margin-right: 0.5%;
+    line-height: 1.2;
+}
+
+#prin h1{
+    text-align: center;/* alinhas texto no centro*/
+    font-size: x-large;
+    letter-spacing: 2px;
+    font-family: cursive;
+    padding-top: 20px;
+    width: 98%;
+}    
+
+#prin h4{
+padding-left: 1%;
+}
+    
+    
+
+
+#prin p{
+    margin-left: 5%;/*para definir a distancia da margem para a esquerda  */
+    margin-right: 5%;/*para definir a distancia da margem para a direita  */
+    font-size: large;
+}
+
+#secun{
+    grid-area: secun;
+    display: grid;
+    text-align: justify;
+    background-color: antiquewhite;/*  cor do fundo */
+    border-radius: 0.8em;/*tamanho da borda */
+    margin-bottom: 7%;
+    margin-top: 7%;
+    margin-left: 4%;
+}
+
+#secun h3{
+    text-align: center;/* para alinhar o texto  no centro*/
+    font-size: large;
+    padding-top: 14px;
+}
+
+#secun p{
+    margin-left: 5%;/* porcentagem da margem para a esquerda*/
+    margin-right: 5%;/* porcentagem da margem para a esquerda */
+    padding-bottom: 350px;
+}
+
+#roda{
+    background: linear-gradient(to right, #a95e13, #110038);/* usamos para fazer o degrade no footer */
+    grid-area: roda;
+    border-radius: 20px;
+}
+
+#roda h3{
+    text-align: center;/* alinhar texto no centro */
+    font-size: large;
+    padding: 10px;
+}
+
+#roda p{
+    text-align: center;/* alinhar texto no centro */
+    padding-top: 5px;
+}
+
+.p{ 
+    color: white; /* cor do paragrafo */
+}
